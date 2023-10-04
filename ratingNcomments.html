@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBuk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <script src="JS/script.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">FoodBuk</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ratingNcomments.html">Rating & Comments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Rating and Comments Section -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Rating and Comments</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="foodRating" class="form-label">Rate the Food</label>
+                    <select class="form-select" id="foodRating">
+                        <option selected disabled>Select a rating</option>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Add a Comment</label>
+                    <textarea class="form-control" id="comment" rows="4" placeholder="Write your comment"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="foodImage" class="form-label">Upload Food Image</label>
+                    <input type="file" class="form-control" id="foodImage">
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="mt-4">
+            <h4>Comments</h4>
+            <div class="card">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6>User 1</h6>
+                        <p>This food was delicious! I highly recommend it.</p>
+                        <button class="btn btn-sm btn-secondary">Reply</button>
+                        <button class="btn btn-sm btn-secondary">Upvote (12)</button>
+                    </div>
+                    <div class="mb-3 ms-5">
+                        <h6>User 2</h6>
+                        <p>Thank you! I agree, it's amazing.</p>
+                        <button class="btn btn-sm btn-secondary">Reply</button>
+                        <button class="btn btn-sm btn-secondary">Upvote (8)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rating and Comments Section -->
+<div class="container mt-5">
+    <!-- Rest of the Rating and Comments Section content -->
+
+    <!-- Button to go to the complaints page -->
+    <button class="btn btn-primary mt-4" onclick="goToComplaintsPage()">Go to Complaints Page</button>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
