@@ -1,7 +1,13 @@
 body {
     background-color: #f8f9fa;
+    
 }
 
 .navbar {
     background-color: #010124;
+
+}
+
+.content {
+    margin-bottom: 20px; /* Adjust as needed */
 }
