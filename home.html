@@ -38,54 +38,71 @@
     </nav>
 
         <!-- Home Page -->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Summary of Your Activities</h5>
-                        <!-- Display summary of past activities -->
-                        <p>Past activities summary goes here.</p>
-                        <a href="prepaid_details.html">View more details</a>
+        <div class="container mt-5" id="my-content">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="card-title">Recommendations for Today</h5>
+                            <!-- Display recommendations based on time of day and past food orders -->
+                            <p>Based on your past orders and the time of the day, we recommend trying our delicious breakfast options.</p>
+                            <a href="menu.html">Explore Menu</a>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="card-title">Summary of Your Activities</h5>
+                            <!-- Display summary of past activities -->
+                            <p>Your recent activities include attending a lecture, studying at the library, and a fitness session.</p>
+                            <a href="activity_log.html">View detailed activity log</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Today's Spending</h5>
-                        <!-- Display today's spending -->
-                        <p>You have spent $50 today.</p>
-                        <a href="prepaid_details.html">View more details</a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="card-title">Today's Spending</h5>
+                            <!-- Display today's spending -->
+                            <p>You have spent $50 today.</p>
+                            <a href="spending_details.html">View spending details</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card mt-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Prepaid Lunch Details</h5>
-                        <!-- Display prepaid lunch details and available budget -->
-                        <p>Total prepaid lunch amount: $200</p>
-                        <p>Remaining budget for today: $50</p>
-                        <a href="prepaid_details.html">View more details</a>
+                    <div class="card mt-3">
+                        <div class="card-body" data-aos="fade-up" data-aos-duration="1000">
+                            <h5 class="card-title">Prepaid Lunch Details</h5>
+                            <!-- Display prepaid lunch details and available budget -->
+                            <p>Total prepaid lunch amount: $200</p>
+                            <p>Remaining budget for today: $50</p>
+                            <a href="prepaid_details.html">View more details</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <p>&copy; 2023 FoodBuk</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="#">About Us</a></li>
-            <li class="list-inline-item"><a href="#">Menu</a></li>
-            <li class="list-inline-item"><a href="#">Rating & Comments</a></li>
-            <li class="list-inline-item"><a href="#">Logout</a></li>
-        </ul>
-    </div>
-</footer>
+        
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 FoodBuk</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About Us</a></li>
+                <li class="list-inline-item"><a href="menu.html">Menu</a></li>
+                <li class="list-inline-item"><a href="ratingNcomments.html">Rating & Comments</a></li>
+                <li class="list-inline-item"><a href="complaints.html">Compliants</a></li>
+                <li class="list-inline-item"><a href="gallary.html">Gallery</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,  // Animation duration in milliseconds
+            easing: 'ease-in-out',  // Easing type for the animation
+            once: true  // Whether animation should only happen once, as the user scrolls down
+        });
+    </script>
 </body>
 </html>

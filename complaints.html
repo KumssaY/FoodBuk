@@ -39,10 +39,10 @@
     </nav>
 
     <!-- Complaints Section -->
-<div class="container mt-5">
+<div class="container mt-5" id="my-content">
     <h2 class="mb-4">Complaints</h2>
-    <div class="card">
-        <div class="card-body">
+    <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card-body" >
             <div class="mb-3">
                 <label for="complaintType" class="form-label">Complaint Type</label>
                 <select class="form-select" id="complaintType">
@@ -62,21 +62,29 @@
     </div>
 </div>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <p>&copy; 2023 FoodBuk</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="#">About Us</a></li>
-            <li class="list-inline-item"><a href="#">Menu</a></li>
-            <li class="list-inline-item"><a href="#">Rating & Comments</a></li>
-            <li class="list-inline-item"><a href="#">Logout</a></li>
-        </ul>
-    </div>
-</footer>
-
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 FoodBuk</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About Us</a></li>
+                <li class="list-inline-item"><a href="menu.html">Menu</a></li>
+                <li class="list-inline-item"><a href="ratingNcomments.html">Rating & Comments</a></li>
+                <li class="list-inline-item"><a href="complaints.html">Compliants</a></li>
+                <li class="list-inline-item"><a href="gallary.html">Gallery</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,  // Animation duration in milliseconds
+            easing: 'ease-in-out',  // Easing type for the animation
+            once: true  // Whether animation should only happen once, as the user scrolls down
+        });
+    </script>
 </body>
 </html>
