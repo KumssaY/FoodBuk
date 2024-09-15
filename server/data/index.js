@@ -1,0 +1,148 @@
+import mongoose from "mongoose";
+
+export const FoodmenuItems = [
+  {
+    foodmenuId: "1",
+    fooditem: "Ugali",
+    foodprice: 150,
+    availability: true,
+  },
+  {
+    foodmenuId: "2",
+    fooditem: "Sukuma Wiki",
+    foodprice: 250,
+    availability: true,
+  },
+  {
+    foodmenuId: "3",
+    fooditem: "Nyama Choma",
+    foodprice: 450,
+    availability: true,
+  },
+  {
+    foodmenuId: "4",
+    fooditem: "Githeri",
+    foodprice: 300,
+    availability: false,
+  },
+  {
+    foodmenuId: "5",
+    fooditem: "Mandazi",
+    foodprice: 50,
+    availability: true,
+  },
+  {
+    foodmenuId: "6",
+    fooditem: "Chapati",
+    foodprice: 100,
+    availability: true,
+  },
+  {
+    foodmenuId: "7",
+    fooditem: "Samosa",
+    foodprice: 80,
+    availability: true,
+  },
+  {
+    foodmenuId: "8",
+    fooditem: "Mutura",
+    foodprice: 120,
+    availability: false,
+  },
+  {
+    foodmenuId: "9",
+    fooditem: "Maharagwe",
+    foodprice: 150,
+    availability: true,
+  },
+  {
+    foodmenuId: "10",
+    fooditem: "Cabbage",
+    foodprice: 200,
+    availability: true,
+  },
+  {
+    foodmenuId: "11",
+    fooditem: "Kachumbari",
+    foodprice: 60,
+    availability: true,
+  },
+  {
+    foodmenuId: "12",
+    fooditem: "Matoke",
+    foodprice: 180,
+    availability: true,
+  },
+  {
+    foodmenuId: "13",
+    fooditem: "Mursik",
+    foodprice: 70,
+    availability: true,
+  },
+  {
+    foodmenuId: "14",
+    fooditem: "Omena",
+    foodprice: 130,
+    availability: false,
+  },
+  {
+    foodmenuId: "15",
+    fooditem: "Chakalaka",
+    foodprice: 90,
+    availability: true,
+  },
+  {
+    foodmenuId: "16",
+    fooditem: "Kaimati",
+    foodprice: 40,
+    availability: true,
+  },
+  {
+    foodmenuId: "17",
+    fooditem: "Nyama Fry",
+    foodprice: 220,
+    availability: true,
+  },
+  {
+    foodmenuId: "18",
+    fooditem: "Kunde",
+    foodprice: 120,
+    availability: true,
+  },
+  {
+    foodmenuId: "19",
+    fooditem: "Sukuma Wiki with Chapati",
+    foodprice: 180,
+    availability: true,
+  },
+  {
+    foodmenuId: "20",
+    fooditem: "Mandazi with Chai",
+    foodprice: 60,
+    availability: true,
+  },
+  {
+    foodmenuId: "21",
+    fooditem: "Mahamri",
+    foodprice: 70,
+    availability: false,
+  },
+  {
+    foodmenuId: "22",
+    fooditem: "Bhajia",
+    foodprice: 100,
+    availability: true,
+  },
+  {
+    foodmenuId: "23",
+    fooditem: "Sukuma Wiki with Rice",
+    foodprice: 200,
+    availability: true,
+  },
+  {
+    foodmenuId: "24",
+    fooditem: "Mandazi with Coconut Chutney",
+    foodprice: 80,
+    availability: true,
+  },  
+];

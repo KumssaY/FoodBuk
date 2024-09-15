@@ -1,0 +1,48 @@
+.fmp_content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    column-gap: 20px;
+}
+.fmp_col {
+    display: flex;
+    height: fit-content;
+}
+.fmp_col:first-child {
+    width: 70%;
+}
+.fmp_col:last-child {
+    width: 30%;
+}
+.fmp_fmw {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+.fmp_food_menu_widget {
+    width: 100%;
+    background-image: url("IMG_20231027_063207_236.jpg");
+}
+
+.fmp_food_menu_widget > h1 {
+    color: white;
+    z-index: 4;
+    position: relative;
+}
+
+.fmp_bg_overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.363);
+    z-index: 1;
+    border-radius: 0.75rem;
+}
+.FoodItemWidget {
+    background-color: white;
+    border-radius: 0.75rem;
+    margin: 2rem;
+    z-index: 4;
+    position: relative;
+}

@@ -1,0 +1,25 @@
+.fiw_wrapper {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.fiw_content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.fiw_col {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    column-gap: 10px;
+    align-items: center;
+}
+.fiw_col:last-child {
+    justify-content: end;
+}
